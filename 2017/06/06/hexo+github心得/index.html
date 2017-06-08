@@ -93,17 +93,17 @@
 
 
 
-<meta name="description" content="搭建心得 重点是hexo更新到3.0之后，部署前_config.yaml里deploy下type需要写git而不是github。 .yaml文件中，各项目后要加空格，如type: git。 post.md默认文件tags和categories后面不可添加分类目录，否则生成不了title.md  123456---title: &amp;#123;&amp;#123; title &amp;#125;&amp;#125;date:">
+<meta name="description" content="搭建心得 重点是hexo更新到3.0之后，部署前_config.yaml里deploy下type需要写git而不是github。 .yaml文件中，各项目后要加空格，如type: git。  post.md默认文件tags和categories后面不可添加分类目录，否则生成不了title.md。 123456---title: &amp;#123;&amp;#123; title &amp;#125;&amp;#125;date">
 <meta name="keywords" content="blog hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo+github心得">
 <meta property="og:url" content="http://hexo.zwhouse.space/2017/06/06/hexo+github心得/index.html">
 <meta property="og:site_name" content="走下去">
-<meta property="og:description" content="搭建心得 重点是hexo更新到3.0之后，部署前_config.yaml里deploy下type需要写git而不是github。 .yaml文件中，各项目后要加空格，如type: git。 post.md默认文件tags和categories后面不可添加分类目录，否则生成不了title.md  123456---title: &amp;#123;&amp;#123; title &amp;#125;&amp;#125;date:">
-<meta property="og:updated_time" content="2017-06-08T15:03:57.671Z">
+<meta property="og:description" content="搭建心得 重点是hexo更新到3.0之后，部署前_config.yaml里deploy下type需要写git而不是github。 .yaml文件中，各项目后要加空格，如type: git。  post.md默认文件tags和categories后面不可添加分类目录，否则生成不了title.md。 123456---title: &amp;#123;&amp;#123; title &amp;#125;&amp;#125;date">
+<meta property="og:updated_time" content="2017-06-08T15:27:50.496Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo+github心得">
-<meta name="twitter:description" content="搭建心得 重点是hexo更新到3.0之后，部署前_config.yaml里deploy下type需要写git而不是github。 .yaml文件中，各项目后要加空格，如type: git。 post.md默认文件tags和categories后面不可添加分类目录，否则生成不了title.md  123456---title: &amp;#123;&amp;#123; title &amp;#125;&amp;#125;date:">
+<meta name="twitter:description" content="搭建心得 重点是hexo更新到3.0之后，部署前_config.yaml里deploy下type需要写git而不是github。 .yaml文件中，各项目后要加空格，如type: git。  post.md默认文件tags和categories后面不可添加分类目录，否则生成不了title.md。 123456---title: &amp;#123;&amp;#123; title &amp;#125;&amp;#125;date">
 
 
 
@@ -345,10 +345,15 @@
       
         <h2 id="搭建心得"><a href="#搭建心得" class="headerlink" title="搭建心得"></a>搭建心得</h2><ul>
 <li>重点是hexo更新到3.0之后，部署前<code>_config.yaml里deploy</code>下<code>type</code>需要写<code>git</code>而不是<code>github</code>。</li>
-<li>.yaml文件中，各项目后要<code>加空格</code>，如<code>type: git</code>。</li>
-<li>post.md默认文件tags和categories后面不可添加分类目录，否则生成不了title.md</li>
-</ul>
+<li><p>.yaml文件中，各项目后要<code>加空格</code>，如<code>type: git</code>。</p>
+</li>
+<li><p>post.md默认文件tags和categories后面不可添加分类目录，否则生成不了title.md。</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: &#123;&#123; title &#125;&#125;</div><div class="line">date: &#123;&#123; date &#125;&#125;</div><div class="line">tags:</div><div class="line"><span class="section">categories:</span></div><div class="line">---</div></pre></td></tr></table></figure>
+</li>
+<li><p>将CNAME文件添加到source文件下，防止hexo部署到Github上被覆盖消失</p>
+</li>
+</ul>
+
       
     </div>
 

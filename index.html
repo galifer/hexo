@@ -344,27 +344,28 @@
       
         
           
-            <p>```</p>
-<h1 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h1><p><a href="http://blog.fens.me/hexo-blog-github/" target="_blank" rel="external">Hexo在github上构建免费的Web应用</a></p>
-<p>看到这个教程想到以下几点</p>
+            <h1 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h1><p><a href="http://blog.fens.me/hexo-blog-github/" target="_blank" rel="external">Hexo在github上构建免费的Web应用</a></p>
+<p>看到这个教程想到以下几点：</p>
 <ul>
-<li>Github Page可以通过建立username.github.io这类的仓库来构建Web应用（下面用A代指）</li>
-<li>Github Page还可以建立其他名称的仓库project进行web的构建Web应用（下面用B/C/D/…/代指）</li>
+<li>Github Page可以通过建立username.github.io这类的仓库来构建Web应用（下面用A代指）。</li>
+<li>Github Page还可以建立其他名称的仓库project进行web的构建Web应用（下面用B/C/D/…/代指）。</li>
 <li>以上两者访问时显示的地址，尤其是绑定域名example.com后。</li>
 </ul>
-<h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2><h3 id="绑定"><a href="#绑定" class="headerlink" title="绑定"></a>绑定</h3><p>同时建立A和B/C/D/…，可以只建立A，但不可只建立B，即不管用到哪个应用,A是必须建立的（经过试验后，个人认为是这样）</p>
+<h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2><h3 id="绑定"><a href="#绑定" class="headerlink" title="绑定"></a>绑定</h3><p>同时建立A和B/C/D/…，可以只建立A，或者建立A仓库但不构建web应用，但不可只建立B，即不管用到哪个应用,A是必须建立的（经过试验后，个人认为是这样）。</p>
 <ul>
 <li>只绑定A<ul>
-<li>前者访问地址是username.github.io或example.com，</li>
-<li>后者访问地址是username.github.io/example或example.com/example</li>
+<li>前者访问地址是username.github.io或example.com。</li>
+<li>后者访问地址是username.github.io/B或example.com/B。</li>
 </ul>
 </li>
-<li>A绑定examp.com，B绑定examp.com下的子域名b.example.com（经过试验后绑定不同的主域名可能会不成功）<ul>
-<li>两者访问地址将会分别显示examp.com和b.example.com,同时example.com/B也可访问到B<h3 id="CNAME"><a href="#CNAME" class="headerlink" title="CNAME"></a>CNAME</h3>添加CNAME文件</li>
+<li>A绑定examp.com，B绑定examp.com下的子域名b.example.com。<ul>
+<li>两者访问地址将会分别显示examp.com和b.example.com,同时example.com/B也可访问到B。<br>*经过不完全试验后，绑定不同的主域名可能会不成功，但没有实验跳过该主域名examp.com分别绑定该域名下的不同子域名如a.example.com和b.example.com。</li>
 </ul>
 </li>
 </ul>
-<h3 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h3>
+<h3 id="CNAME"><a href="#CNAME" class="headerlink" title="CNAME"></a>CNAME</h3><p>添加CNAME文件到根目录，将想要绑定的域名example.com写入。</p>
+<h3 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h3><p>找域名服务商进行解析，A的域名可解析为A类或CNAME类，B的域名则解析为CNAME类（试过解析为A类，Github提示不可以）。</p>
+
           
         
       
@@ -638,10 +639,15 @@
           
             <h2 id="搭建心得"><a href="#搭建心得" class="headerlink" title="搭建心得"></a>搭建心得</h2><ul>
 <li>重点是hexo更新到3.0之后，部署前<code>_config.yaml里deploy</code>下<code>type</code>需要写<code>git</code>而不是<code>github</code>。</li>
-<li>.yaml文件中，各项目后要<code>加空格</code>，如<code>type: git</code>。</li>
-<li>post.md默认文件tags和categories后面不可添加分类目录，否则生成不了title.md</li>
-</ul>
+<li><p>.yaml文件中，各项目后要<code>加空格</code>，如<code>type: git</code>。</p>
+</li>
+<li><p>post.md默认文件tags和categories后面不可添加分类目录，否则生成不了title.md。</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: &#123;&#123; title &#125;&#125;</div><div class="line">date: &#123;&#123; date &#125;&#125;</div><div class="line">tags:</div><div class="line"><span class="section">categories:</span></div><div class="line">---</div></pre></td></tr></table></figure>
+</li>
+<li><p>将CNAME文件添加到source文件下，防止hexo部署到Github上被覆盖消失</p>
+</li>
+</ul>
+
           
         
       
