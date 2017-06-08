@@ -359,9 +359,10 @@
 </ul>
 </li>
 <li>A绑定examp.com，B绑定examp.com下的子域名b.example.com。<ul>
-<li>两者访问地址将会分别显示examp.com和b.example.com,同时example.com/B也可访问到B。<br>*经过不完全试验后，绑定不同的主域名可能会不成功，但没有实验跳过该主域名examp.com分别绑定该域名下的不同子域名如a.example.com和b.example.com。</li>
+<li>两者访问地址将会分别显示examp.com和b.example.com,同时example.com/B也可访问到B。</li>
 </ul>
 </li>
+<li>经过不完全试验后，绑定不同的主域名可能会不成功，但没有实验跳过该主域名examp.com分别绑定该域名下的不同子域名如a.example.com和b.example.com。</li>
 </ul>
 <h3 id="CNAME"><a href="#CNAME" class="headerlink" title="CNAME"></a>CNAME</h3><p>添加CNAME文件到根目录，将想要绑定的域名example.com写入。</p>
 <h3 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h3><p>找域名服务商进行解析，A的域名可解析为A类或CNAME类，B的域名则解析为CNAME类（试过解析为A类，Github提示不可以）。</p>
