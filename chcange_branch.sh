@@ -1,1 +1,1 @@
-git checkout -b master origin/master
+git checkout -b dev origin/dev
