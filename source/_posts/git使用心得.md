@@ -21,15 +21,15 @@ $ git add -p [file_name]
 $ git commit –amend
 ```
 ## 分支
-###创建并切换新分支
+### 创建并切换新分支
 ```bash
 $ git checkout -b [new_branch]
 ```
-###切换分支
+### 切换分支
 ```bash
 $ git checkout [branch]
 ```
-###更新A分支到B分支
+### 更新A分支到B分支
 先切换B分支，再更新A分支到B分支
 ```bash
 $ git checkout A_branch
