@@ -6,7 +6,7 @@ tags:
 	-hexo
 categories:
 	-技术总结
-	-搭建博客
+	-Github
 	-hexo+github
 ---
 ## 搭建心得
@@ -22,3 +22,15 @@ tags:
 categories:
 ---
 ```
+
+### 感觉比较好的教程
+[Hexo在github上构建免费的Web应用](http://blog.fens.me/hexo-blog-github/)
+主要在于点醒了：
+* Github Page可以通过建立githubname.github.io这类的仓库来搭建博客，
+* Github Page还可以建立其他名称的仓库example进行web的构建，
+区别在于访问时显示的地址，尤其是绑定域名example.com后。
+
+在已建立githubname.github.io仓库和example仓库且两者都建立的前提下，
+* githubname.github.io仓库和example仓库都建立web应用
+	* 前者访问路径会是githubname.github.io或example.com，
+	* 后者访问路径会是githubname.github.io/example或example.com/example
