@@ -206,6 +206,26 @@
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
@@ -499,12 +519,11 @@
       
         
           
-            <h2 id="暂存一个文件的部分改动"><a href="#暂存一个文件的部分改动" class="headerlink" title="暂存一个文件的部分改动"></a>暂存一个文件的部分改动</h2><p>通常来讲，创建一个基于特性的提交是一个良好的做法，就是说，每次提交都必须代表一个新特性的产生或者是一个bug的修复。考虑一下，如果你修复了两个bug，或是添加了多个新特性但是却没有提交这些变化会怎样呢？在这种情况下，你可以把这些变化放在一次提交中。但是还有一个更好的方法：把文件分别暂存(Stage)然后分别提交。</p>
-<p>比如说，你对一个文件进行了多次修改并且想把他们分别提交。这种情况下，你可以在添加命令(add)中加上-p选项<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git add -p [file_name]</div></pre></td></tr></table></figure></p>
-<h3 id="逐一添加修改信息"><a href="#逐一添加修改信息" class="headerlink" title="逐一添加修改信息"></a>逐一添加修改信息</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git commit –amend</div></pre></td></tr></table></figure>
-<h2 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h2><h3 id="创建并切换新分支"><a href="#创建并切换新分支" class="headerlink" title="创建并切换新分支"></a>创建并切换新分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git checkout -b [new_branch]</div></pre></td></tr></table></figure>
-<h3 id="切换分支"><a href="#切换分支" class="headerlink" title="切换分支"></a>切换分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git checkout [branch]</div></pre></td></tr></table></figure>
-<h3 id="更新A分支到B分支"><a href="#更新A分支到B分支" class="headerlink" title="更新A分支到B分支"></a>更新A分支到B分支</h3><p>先切换B分支，再更新A分支到B分支<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git checkout A_branch</div><div class="line">$ git rebase B_branch</div></pre></td></tr></table></figure></p>
+            <h1 id="暂存一个文件的部分改动"><a href="#暂存一个文件的部分改动" class="headerlink" title="暂存一个文件的部分改动"></a>暂存一个文件的部分改动</h1><p>通常来讲，创建一个基于特性的提交是一个良好的做法，就是说，每次提交都必须代表一个新特性的产生或者是一个bug的修复。考虑一下，如果你修复了两个bug，或是添加了多个新特性但是却没有提交这些变化会怎样呢？在这种情况下，你可以把这些变化放在一次提交中。但是还有一个更好的方法：把文件分别暂存(Stage)然后分别提交。<br>比如说，你对一个文件进行了多次修改并且想把他们分别提交。这种情况下，你可以在添加命令(add)中加上-p选项<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git add -p [file_name]</div></pre></td></tr></table></figure></p>
+<h2 id="逐一添加修改信息"><a href="#逐一添加修改信息" class="headerlink" title="逐一添加修改信息"></a>逐一添加修改信息</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git commit –amend</div></pre></td></tr></table></figure>
+<h1 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h1><h2 id="创建并切换新分支"><a href="#创建并切换新分支" class="headerlink" title="创建并切换新分支"></a>创建并切换新分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git checkout -b [new_branch]</div></pre></td></tr></table></figure>
+<h2 id="切换分支"><a href="#切换分支" class="headerlink" title="切换分支"></a>切换分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git checkout [branch]</div></pre></td></tr></table></figure>
+<h2 id="更新A分支到B分支"><a href="#更新A分支到B分支" class="headerlink" title="更新A分支到B分支"></a>更新A分支到B分支</h2><p>先切换B分支，再更新A分支到B分支<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git checkout A_branch</div><div class="line">$ git rebase B_branch</div></pre></td></tr></table></figure></p>
 
           
         
@@ -638,15 +657,15 @@
       
         
           
-            <h2 id="搭建心得"><a href="#搭建心得" class="headerlink" title="搭建心得"></a>搭建心得</h2><ul>
+            <h1 id="搭建心得"><a href="#搭建心得" class="headerlink" title="搭建心得"></a>搭建心得</h1><h2 id="deploy错误"><a href="#deploy错误" class="headerlink" title="deploy错误"></a>deploy错误</h2><ul>
 <li>重点是hexo更新到3.0之后，部署前<code>_config.yaml里deploy</code>下<code>type</code>需要写<code>git</code>而不是<code>github</code>。</li>
-<li><p>.yaml文件中，各项目后要<code>加空格</code>，如<code>type: git</code>。</p>
-</li>
-<li><p>post.md默认文件tags和categories后面不可添加分类目录，否则生成不了title.md。</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: &#123;&#123; title &#125;&#125;</div><div class="line">date: &#123;&#123; date &#125;&#125;</div><div class="line">tags:</div><div class="line"><span class="section">categories:</span></div><div class="line">---</div></pre></td></tr></table></figure>
-</li>
-<li><p>将CNAME文件添加到source文件下，防止hexo部署到Github上被覆盖消失</p>
-</li>
+<li>.yaml文件中，各项目后要<code>加空格</code>，如<code>type: git</code>。</li>
+</ul>
+<h2 id="hexo-new-“title”-错误"><a href="#hexo-new-“title”-错误" class="headerlink" title="hexo new “title” 错误"></a>hexo new “title” 错误</h2><p><code>post.md</code>默认文件的tags和categories后面不可添加分类目录，否则生成不了title.md（或许修改一下可以实现）。<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: &#123;&#123; title &#125;&#125;</div><div class="line">date: &#123;&#123; date &#125;&#125;</div><div class="line">tags:</div><div class="line"><span class="section">categories:</span></div><div class="line">---</div></pre></td></tr></table></figure></p>
+<p>看到网上说的，<code>hexo n title</code>时标题里有空格时必须要加<code>&quot;&quot;</code>，其他都可以不加，试了一下果然可以。</p>
+<p>##绑定域名后，CNAME文件在每次更新文章部署网站后会被覆盖掉</p>
+<ul>
+<li>将CNAME文件添加到source文件下，更改_config.yaml里的<code>skip_render: CNAME</code>参数,防止hexo部署到Github上被覆盖消失。</li>
 </ul>
 
           
