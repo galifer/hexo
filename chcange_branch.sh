@@ -1,1 +1,0 @@
-git checkout -b master origin/master
