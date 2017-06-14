@@ -2,12 +2,12 @@
 title: hexo+github心得
 date: 2017-06-06 12:02:57
 tags:
-	blog
-	hexo
+	- blog
+	- hexo
 categories:
-	技术总结
-	Git
-	hexo+github
+	- 技术总结
+	- Git
+	- hexo+github
 ---
 # 搭建心得
 

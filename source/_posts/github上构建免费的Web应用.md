@@ -2,11 +2,11 @@
 title: github上构建免费的Web应用
 date: 2017-06-08 21:46:03
 tags: 
-	github
+	- github
 categories: 
-	技术总结
-	Git
-	Github
+	- 技术总结
+	- Git
+	- Github
 ---
 
 # 引子
