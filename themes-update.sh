@@ -2,9 +2,7 @@ cd themes/next
 git pull https://github.com/iissnan/hexo-theme-next.git
 #cd ../../themes/yilie
 #git pull https://github.com/litten/hexo-theme-yilia.git
-#cd ../../themes/alpha-dust
-#git pull https://github.com/klugjo/hexo-theme-alpha-dust.git
+cd ../../themes/alpha-dust
+git pull https://github.com/klugjo/hexo-theme-alpha-dust.git
 cd ../../themes/yelee
 git pull https://github.com/MOxFIVE/hexo-theme-yelee.git
-cd ../../themes/ylion
-git pull https://github.com/GeekaholicLin/hexo-theme-ylion.git
