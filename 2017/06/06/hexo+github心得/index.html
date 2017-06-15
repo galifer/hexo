@@ -93,17 +93,17 @@
 
 
 
-<meta name="description" content="搭建心得deploy错误 hexo更新到3.0之后，部署前_config.yaml里deploy下type需要写git而不是github（.yaml文件中，各项目后要加空格，如type: git）。 若操作失败，安装一个扩展试一试，代码：npm install hexo-deployer-git --save  hexo new “title” 错误post.md默认文件的tags和categor">
+<meta name="description" content="搭建心得deploy错误 hexo更新到3.0之后，部署前_config.yaml里deploy下type需要写git而不是github（.yaml文件中，各项目后要加空格，如type: git）。 若操作失败，安装一个扩展试一试，代码：npm install hexo-deployer-git --save">
 <meta name="keywords" content="blog,hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo+github心得">
 <meta property="og:url" content="http://blog.zwhouse.space/2017/06/06/hexo+github心得/index.html">
 <meta property="og:site_name" content="走下去">
-<meta property="og:description" content="搭建心得deploy错误 hexo更新到3.0之后，部署前_config.yaml里deploy下type需要写git而不是github（.yaml文件中，各项目后要加空格，如type: git）。 若操作失败，安装一个扩展试一试，代码：npm install hexo-deployer-git --save  hexo new “title” 错误post.md默认文件的tags和categor">
-<meta property="og:updated_time" content="2017-06-14T13:28:41.371Z">
+<meta property="og:description" content="搭建心得deploy错误 hexo更新到3.0之后，部署前_config.yaml里deploy下type需要写git而不是github（.yaml文件中，各项目后要加空格，如type: git）。 若操作失败，安装一个扩展试一试，代码：npm install hexo-deployer-git --save">
+<meta property="og:updated_time" content="2017-06-15T16:14:07.037Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo+github心得">
-<meta name="twitter:description" content="搭建心得deploy错误 hexo更新到3.0之后，部署前_config.yaml里deploy下type需要写git而不是github（.yaml文件中，各项目后要加空格，如type: git）。 若操作失败，安装一个扩展试一试，代码：npm install hexo-deployer-git --save  hexo new “title” 错误post.md默认文件的tags和categor">
+<meta name="twitter:description" content="搭建心得deploy错误 hexo更新到3.0之后，部署前_config.yaml里deploy下type需要写git而不是github（.yaml文件中，各项目后要加空格，如type: git）。 若操作失败，安装一个扩展试一试，代码：npm install hexo-deployer-git --save">
 
 
 
@@ -389,6 +389,7 @@
 <li>hexo更新到3.0之后，部署前<code>_config.yaml里deploy</code>下<code>type</code>需要写<code>git</code>而不是<code>github</code>（.yaml文件中，各项目后要<code>加空格</code>，如<code>type: git</code>）。</li>
 <li>若操作失败，安装一个扩展试一试，代码：<code>npm install hexo-deployer-git --save</code></li>
 </ol>
+<a id="more"></a>
 <h2 id="hexo-new-“title”-错误"><a href="#hexo-new-“title”-错误" class="headerlink" title="hexo new “title” 错误"></a>hexo new “title” 错误</h2><p><code>post.md</code>默认文件的tags和categories后面不可添加分类目录，否则生成不了title.md（或许修改一下可以实现）。<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: &#123;&#123; title &#125;&#125;</div><div class="line">date: &#123;&#123; date &#125;&#125;</div><div class="line">tags:</div><div class="line"><span class="section">categories:</span></div><div class="line">---</div></pre></td></tr></table></figure></p>
 <p>看到网上说的，<code>hexo n title</code>时标题里有空格时必须要加<code>&quot;&quot;</code>，其他都可以不加，试了一下果然可以。</p>
 <h2 id="绑定域名后，CNAME文件在下次deploy时消失"><a href="#绑定域名后，CNAME文件在下次deploy时消失" class="headerlink" title="绑定域名后，CNAME文件在下次deploy时消失"></a>绑定域名后，CNAME文件在下次deploy时消失</h2><p>该问题推测是因为被本地.deploy_git仓库全部替换了<br>将CNAME文件添加到source文件下（有人说更改_config.yaml里的<code>skip_render: CNAME</code>参数，试过不修改也可以，只要放到source文件夹下）,防止hexo部署到Github上被覆盖消失。网上还有其他方法，安装插件什么的。</p>

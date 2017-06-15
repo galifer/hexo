@@ -93,17 +93,17 @@
 
 
 
-<meta name="description" content="暂存一个文件的部分改动通常来讲，创建一个基于特性的提交是一个良好的做法，就是说，每次提交都必须代表一个新特性的产生或者是一个bug的修复。考虑一下，如果你修复了两个bug，或是添加了多个新特性但是却没有提交这些变化会怎样呢？在这种情况下，你可以把这些变化放在一次提交中。但是还有一个更好的方法：把文件分别暂存(Stage)然后分别提交。比如说，你对一个文件进行了多次修改并且想把他们分别提交。这种情况">
+<meta name="description" content="暂存一个文件的部分改动通常来讲，创建一个基于特性的提交是一个良好的做法，就是说，每次提交都必须代表一个新特性的产生或者是一个bug的修复。考虑一下，如果你修复了两个bug，或是添加了多个新特性但是却没有提交这些变化会怎样呢？在这种情况下，你可以把这些变化放在一次提交中。但是还有一个更好的方法：把文件分别暂存(Stage)然后分别提交。">
 <meta name="keywords" content="git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git使用心得">
 <meta property="og:url" content="http://blog.zwhouse.space/2017/06/08/git使用心得/index.html">
 <meta property="og:site_name" content="走下去">
-<meta property="og:description" content="暂存一个文件的部分改动通常来讲，创建一个基于特性的提交是一个良好的做法，就是说，每次提交都必须代表一个新特性的产生或者是一个bug的修复。考虑一下，如果你修复了两个bug，或是添加了多个新特性但是却没有提交这些变化会怎样呢？在这种情况下，你可以把这些变化放在一次提交中。但是还有一个更好的方法：把文件分别暂存(Stage)然后分别提交。比如说，你对一个文件进行了多次修改并且想把他们分别提交。这种情况">
-<meta property="og:updated_time" content="2017-06-14T13:31:21.205Z">
+<meta property="og:description" content="暂存一个文件的部分改动通常来讲，创建一个基于特性的提交是一个良好的做法，就是说，每次提交都必须代表一个新特性的产生或者是一个bug的修复。考虑一下，如果你修复了两个bug，或是添加了多个新特性但是却没有提交这些变化会怎样呢？在这种情况下，你可以把这些变化放在一次提交中。但是还有一个更好的方法：把文件分别暂存(Stage)然后分别提交。">
+<meta property="og:updated_time" content="2017-06-15T16:13:03.738Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git使用心得">
-<meta name="twitter:description" content="暂存一个文件的部分改动通常来讲，创建一个基于特性的提交是一个良好的做法，就是说，每次提交都必须代表一个新特性的产生或者是一个bug的修复。考虑一下，如果你修复了两个bug，或是添加了多个新特性但是却没有提交这些变化会怎样呢？在这种情况下，你可以把这些变化放在一次提交中。但是还有一个更好的方法：把文件分别暂存(Stage)然后分别提交。比如说，你对一个文件进行了多次修改并且想把他们分别提交。这种情况">
+<meta name="twitter:description" content="暂存一个文件的部分改动通常来讲，创建一个基于特性的提交是一个良好的做法，就是说，每次提交都必须代表一个新特性的产生或者是一个bug的修复。考虑一下，如果你修复了两个bug，或是添加了多个新特性但是却没有提交这些变化会怎样呢？在这种情况下，你可以把这些变化放在一次提交中。但是还有一个更好的方法：把文件分别暂存(Stage)然后分别提交。">
 
 
 
@@ -374,7 +374,7 @@
       
 
       
-        <h1 id="暂存一个文件的部分改动"><a href="#暂存一个文件的部分改动" class="headerlink" title="暂存一个文件的部分改动"></a>暂存一个文件的部分改动</h1><p>通常来讲，创建一个基于特性的提交是一个良好的做法，就是说，每次提交都必须代表一个新特性的产生或者是一个bug的修复。考虑一下，如果你修复了两个bug，或是添加了多个新特性但是却没有提交这些变化会怎样呢？在这种情况下，你可以把这些变化放在一次提交中。但是还有一个更好的方法：把文件分别暂存(Stage)然后分别提交。<br>比如说，你对一个文件进行了多次修改并且想把他们分别提交。这种情况下，你可以在添加命令(add)中加上-p选项<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git add -p [file_name]</div></pre></td></tr></table></figure></p>
+        <h1 id="暂存一个文件的部分改动"><a href="#暂存一个文件的部分改动" class="headerlink" title="暂存一个文件的部分改动"></a>暂存一个文件的部分改动</h1><p>通常来讲，创建一个基于特性的提交是一个良好的做法，就是说，每次提交都必须代表一个新特性的产生或者是一个bug的修复。考虑一下，如果你修复了两个bug，或是添加了多个新特性但是却没有提交这些变化会怎样呢？在这种情况下，你可以把这些变化放在一次提交中。但是还有一个更好的方法：把文件分别暂存(Stage)然后分别提交。<br><a id="more"></a><br>比如说，你对一个文件进行了多次修改并且想把他们分别提交。这种情况下，你可以在添加命令(add)中加上-p选项<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git add -p [file_name]</div></pre></td></tr></table></figure></p>
 <h2 id="逐一添加修改信息"><a href="#逐一添加修改信息" class="headerlink" title="逐一添加修改信息"></a>逐一添加修改信息</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git commit –amend</div></pre></td></tr></table></figure>
 <h1 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h1><h2 id="创建并切换新分支"><a href="#创建并切换新分支" class="headerlink" title="创建并切换新分支"></a>创建并切换新分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git checkout -b [new_branch]</div></pre></td></tr></table></figure>
 <h2 id="切换分支"><a href="#切换分支" class="headerlink" title="切换分支"></a>切换分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git checkout [branch]</div></pre></td></tr></table></figure>
