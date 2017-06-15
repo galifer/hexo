@@ -15,6 +15,7 @@ categories:
 1. hexo更新到3.0之后，部署前`_config.yaml里deploy`下`type`需要写`git`而不是`github`（.yaml文件中，各项目后要`加空格`，如`type: git`）。
 2. 若操作失败，安装一个扩展试一试，代码：`npm install hexo-deployer-git --save`
 
+<!-- more -->
 ## hexo new "title" 错误
 `post.md`默认文件的tags和categories后面不可添加分类目录，否则生成不了title.md（或许修改一下可以实现）。
 ```markdown

@@ -45,13 +45,12 @@ index_with_subtitle: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  categories: /categories/
-  about: /about/
   archives: /archives/
+  categories: /categories/
   tags: /tags/
+  about: /about/
   #sitemap: /sitemap.xml
   #commonweal: /404.html
-
 
 # Enable/Disable menu icons.
 # Icon Mapping:
@@ -78,9 +77,9 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
-#scheme: Pisces
+scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -282,7 +281,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night bright
 
 
 # ---------------------------------------------------------------
@@ -485,11 +484,14 @@ local_search:
   # show top n results per article, show all results by setting to -1
   top_n_per_article: 1
 
-# External URL with BASE64 encrypt & decrypt
-# Usage: {% exturl text url "title" %}
-# Alias: {% extlink text url "title" %}
-exturl: false
+#External URL with BASE64 encrypt & decrypt
+#Usage: {% exturl text url "title" %}
+#Alias: {% extlink text url "title" %}
 
+exturl: true
+reward_comment: 如果觉得好，就请我喝瓶水吧^_^
+wechatpay: /uploads/wechat-qcode.jpg
+#alipay: /path/to/alipay-reward-image
 
 #! ---------------------------------------------------------------
 #! DO NOT EDIT THE FOLLOWING SETTINGS
