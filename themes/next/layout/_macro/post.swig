@@ -314,17 +314,19 @@
 
     <div>
       {% if not is_index %}
-        {% include 'wechat-subscriber.swig' %}
+        {% include 'passage-end-tag.swig' %}
       {% endif %}
     </div>
 
-    <div align="center">
+    <div>
       {% if not is_index %}
-        <div class="copyright">
-          <p><span>
-          <b>本文地址：</b><a href="{{ url_for(page.path) }}" title="{{ page.title }}">{{ page.permalink }}</a><br/><b>转载请注明出处，谢谢！</b>
-          </span></p>
-        </div>
+        {% include 'my-copyright.swig' %}
+      {% endif %}
+    </div>
+
+    <div>
+      {% if not is_index %}
+        {% include 'wechat-subscriber.swig' %}
       {% endif %}
     </div>
 
@@ -344,7 +346,7 @@
       {% if post.tags and post.tags.length and not is_index %}
         <div class="post-tags">
           {% for tag in post.tags %}
-            <a href="{{ url_for(tag.path) }}" rel="tag"># {{ tag.name }}</a>
+            <a href="{{ url_for(tag.path) }}" rel="tag"><i class="fa fa-tag"></i> {{ tag.name }}</a>
           {% endfor %}
         </div>
       {% endif %}

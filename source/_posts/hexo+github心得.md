@@ -1,6 +1,7 @@
 ---
 title: hexo+github心得
 date: 2017-06-06 12:02:57
+copyright: true
 tags:
 	- blog
 	- hexo

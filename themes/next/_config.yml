@@ -3,7 +3,7 @@
 # ---------------------------------------------------------------
 
 # Put your favicon.ico into `hexo-site/source/` directory.
-favicon: /favicon.ico
+favicon: /images/favicon.ico
 
 # Set default keywords (Use a comma to separate)
 keywords: "Hexo, NexT"
@@ -46,8 +46,8 @@ index_with_subtitle: false
 menu:
   home: /
   archives: /archives/
-  categories: /categories/
-  tags: /tags/
+  #categories: /categories/
+  #tags: /tags/
   about: /about/
   #sitemap: /sitemap.xml
   #commonweal: /404.html
@@ -78,8 +78,8 @@ menu_icons:
 
 # Schemes
 #scheme: Muse
-#scheme: Mist
-scheme: Pisces
+scheme: Mist
+#scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -489,7 +489,7 @@ local_search:
 #Alias: {% extlink text url "title" %}
 
 exturl: true
-reward_comment: 如果觉得好，就请我喝瓶水吧^_^
+reward_comment: 如果觉得好，就请支持我一下^_^
 wechatpay: /uploads/wechat-qcode.jpg
 #alipay: /path/to/alipay-reward-image
 
@@ -525,7 +525,7 @@ pace: false
 pace_theme: pace-theme-minimal
 
 # Canvas-nest
-canvas_nest: false
+canvas_nest: true
 
 # three_waves
 three_waves: false
@@ -622,6 +622,9 @@ vendors:
   # https://github.com/ethantw/Han
   han:
 
+# 文章末尾添加“本文结束”标记
+passage_end_tag:
+  enabled: true
 
 # Assets
 css: css

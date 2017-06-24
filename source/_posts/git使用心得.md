@@ -1,6 +1,7 @@
 ---
 title: git使用心得
 date: 2017-06-08 13:03:08
+copyright: true
 tags:
 	- git
 categories:

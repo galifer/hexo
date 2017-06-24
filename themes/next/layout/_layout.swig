@@ -2,7 +2,7 @@
 
 {% set html_class = 'theme-next ' + theme.scheme %}
 {% if theme.use_motion %}
-  {% set html_class = html_class + ' use-motion' %}
+{% set html_class = html_class + ' use-motion' %}
 {% endif %}
 
 <html class="{{ html_class | lower }}" lang="{{ config.language }}">
@@ -17,7 +17,7 @@
 
   {% set container_class = "container " %}
   {% if theme.sidebar.position %}
-    {% set container_class = container_class + 'sidebar-position-' + theme.sidebar.position %}
+  {% set container_class = container_class + 'sidebar-position-' + theme.sidebar.position %}
   {% endif %}
 
   <div class="{{ container_class }} {% block page_class %}{% endblock %} ">
@@ -37,7 +37,7 @@
           {% include '_partials/comments.swig' %}
         </div>
         {% if theme.sidebar.display !== 'remove' %}
-          {% block sidebar %}{% endblock %}
+        {% block sidebar %}{% endblock %}
         {% endif %}
       </div>
     </main>
@@ -51,12 +51,12 @@
     </footer>
 
     {% if not theme.sidebar.b2t %}
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        {% if theme.sidebar.scrollpercent %}
-          <span id="scrollpercent"><span>0</span>%</span>
-        {% endif %}
-      </div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+      {% if theme.sidebar.scrollpercent %}
+      <span id="scrollpercent"><span>0</span>%</span>
+      {% endif %}
+    </div>
     {% endif %}
 
   </div>
@@ -68,7 +68,7 @@
   {% include scheme_script %}
 
   {% block script_extra %}
-    {% include '_scripts/pages/post-details.swig' %}
+  {% include '_scripts/pages/post-details.swig' %}
   {% endblock %}
 
   {% include '_scripts/boostrap.swig' %}

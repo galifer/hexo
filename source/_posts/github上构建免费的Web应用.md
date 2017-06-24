@@ -1,6 +1,7 @@
 ---
 title: github上构建免费的Web应用
 date: 2017-06-08 21:46:03
+copyright: true
 tags: 
 	- github
 categories: 
@@ -12,7 +13,7 @@ categories:
 # 引子
 [Hexo在github上构建免费的Web应用（http://blog.fens.me/hexo-blog-github/）](http://blog.fens.me/hexo-blog-github/)
 
-看到这个教程想到以下几点：
+看到这个教程想到以下几点(以下仅为个人总结)：
 * Github Page可以通过建立username.github.io这类的仓库来构建Web应用（下面用A代指）。
 * Github Page还可以建立其他名称的仓库project进行web的构建Web应用（下面用B/C/D/.../代指）。
 * 以上两者访问时显示的地址，尤其是绑定域名example.com后。
