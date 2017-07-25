@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="git," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -93,17 +93,16 @@
 
 
 
-<meta name="description" content="暂存一个文件的部分改动通常来讲，创建一个基于特性的提交是一个良好的做法，就是说，每次提交都必须代表一个新特性的产生或者是一个bug的修复。考虑一下，如果你修复了两个bug，或是添加了多个新特性但是却没有提交这些变化会怎样呢？在这种情况下，你可以把这些变化放在一次提交中。但是还有一个更好的方法：把文件分别暂存(Stage)然后分别提交。">
-<meta name="keywords" content="git">
+<meta name="description" content="image">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git使用心得">
-<meta property="og:url" content="http://blog.zwhouse.space/2017/06/08/git使用心得/index.html">
+<meta property="og:title" content="给自己的忠告">
+<meta property="og:url" content="http://blog.zwhouse.space/2017/07/13/给自己的忠告/index.html">
 <meta property="og:site_name" content="走下去">
-<meta property="og:description" content="暂存一个文件的部分改动通常来讲，创建一个基于特性的提交是一个良好的做法，就是说，每次提交都必须代表一个新特性的产生或者是一个bug的修复。考虑一下，如果你修复了两个bug，或是添加了多个新特性但是却没有提交这些变化会怎样呢？在这种情况下，你可以把这些变化放在一次提交中。但是还有一个更好的方法：把文件分别暂存(Stage)然后分别提交。">
-<meta property="og:updated_time" content="2017-06-24T02:34:01.087Z">
+<meta property="og:description" content="image">
+<meta property="og:updated_time" content="2017-07-13T12:22:50.010Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git使用心得">
-<meta name="twitter:description" content="暂存一个文件的部分改动通常来讲，创建一个基于特性的提交是一个良好的做法，就是说，每次提交都必须代表一个新特性的产生或者是一个bug的修复。考虑一下，如果你修复了两个bug，或是添加了多个新特性但是却没有提交这些变化会怎样呢？在这种情况下，你可以把这些变化放在一次提交中。但是还有一个更好的方法：把文件分别暂存(Stage)然后分别提交。">
+<meta name="twitter:title" content="给自己的忠告">
+<meta name="twitter:description" content="image">
 
 
 
@@ -131,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.zwhouse.space/2017/06/08/git使用心得/"/>
+  <link rel="canonical" href="http://blog.zwhouse.space/2017/07/13/给自己的忠告/"/>
 
 
 
 
 
-  <title>git使用心得 | 走下去</title>
+  <title>给自己的忠告 | 走下去</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -257,7 +256,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://blog.zwhouse.space/2017/06/08/git使用心得/">
+    <link itemprop="mainEntityOfPage" href="http://blog.zwhouse.space/2017/07/13/给自己的忠告/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Galifer">
@@ -274,7 +273,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">git使用心得</h2>
+          <h2 class="post-title" itemprop="name headline">给自己的忠告</h2>
         
 
         <div class="post-meta">
@@ -286,8 +285,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-08T13:03:08+08:00">
-                2017-06-08
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-13T20:14:48+08:00">
+                2017-07-13
               </time>
             
 
@@ -296,39 +295,6 @@
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/技术总结/" itemprop="url" rel="index">
-                    <span itemprop="name">技术总结</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/技术总结/Git/" itemprop="url" rel="index">
-                    <span itemprop="name">Git</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -359,12 +325,8 @@
       
 
       
-        <h1 id="暂存一个文件的部分改动"><a href="#暂存一个文件的部分改动" class="headerlink" title="暂存一个文件的部分改动"></a>暂存一个文件的部分改动</h1><p>通常来讲，创建一个基于特性的提交是一个良好的做法，就是说，每次提交都必须代表一个新特性的产生或者是一个bug的修复。考虑一下，如果你修复了两个bug，或是添加了多个新特性但是却没有提交这些变化会怎样呢？在这种情况下，你可以把这些变化放在一次提交中。但是还有一个更好的方法：把文件分别暂存(Stage)然后分别提交。<br><a id="more"></a><br>比如说，你对一个文件进行了多次修改并且想把他们分别提交。这种情况下，你可以在添加命令(add)中加上-p选项<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git add -p [file_name]</div></pre></td></tr></table></figure></p>
-<h2 id="逐一添加修改信息"><a href="#逐一添加修改信息" class="headerlink" title="逐一添加修改信息"></a>逐一添加修改信息</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git commit –amend</div></pre></td></tr></table></figure>
-<h1 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h1><h2 id="创建并切换新分支"><a href="#创建并切换新分支" class="headerlink" title="创建并切换新分支"></a>创建并切换新分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git checkout -b [new_branch]</div></pre></td></tr></table></figure>
-<h2 id="切换分支"><a href="#切换分支" class="headerlink" title="切换分支"></a>切换分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git checkout [branch]</div></pre></td></tr></table></figure>
-<h2 id="更新A分支到B分支"><a href="#更新A分支到B分支" class="headerlink" title="更新A分支到B分支"></a>更新A分支到B分支</h2><p>先切换B分支，再更新A分支到B分支<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git checkout A_branch</div><div class="line">$ git rebase B_branch</div></pre></td></tr></table></figure></p>
-
+        <p><a href="/images/">image</a><br><a id="more"></a><br>人的一生要经历很多，我们要学会从中汲取教训，不断地对自己提出忠告，时刻警醒自己。</p>
+<h2 id="购买商品，尤其是家电或电子产品，我们要了解好关键的技术参数。因为现在有太多的商品华而不实，依靠宣传对其掩饰，当你用过后，就会懊恼。"><a href="#购买商品，尤其是家电或电子产品，我们要了解好关键的技术参数。因为现在有太多的商品华而不实，依靠宣传对其掩饰，当你用过后，就会懊恼。" class="headerlink" title="购买商品，尤其是家电或电子产品，我们要了解好关键的技术参数。因为现在有太多的商品华而不实，依靠宣传对其掩饰，当你用过后，就会懊恼。"></a>购买商品，尤其是家电或电子产品，我们要了解好关键的技术参数。因为现在有太多的商品华而不实，依靠宣传对其掩饰，当你用过后，就会懊恼。</h2>
       
     </div>
 
@@ -389,12 +351,12 @@
   <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
   <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
   <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
-  <p><span>本文标题:</span><a href="/2017/06/08/git使用心得/">git使用心得</a></p>
+  <p><span>本文标题:</span><a href="/2017/07/13/给自己的忠告/">给自己的忠告</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Galifer 的个人博客">Galifer</a></p>
-  <p><span>发布时间:</span>2017年06月08日 - 13:06</p>
-  <p><span>最后更新:</span>2017年06月24日 - 10:06</p>
-  <p><span>原始链接:</span><a href="/2017/06/08/git使用心得/" title="git使用心得">http://blog.zwhouse.space/2017/06/08/git使用心得/</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://blog.zwhouse.space/2017/06/08/git使用心得/"  aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2017年07月13日 - 20:07</p>
+  <p><span>最后更新:</span>2017年07月13日 - 20:07</p>
+  <p><span>原始链接:</span><a href="/2017/07/13/给自己的忠告/" title="给自己的忠告">http://blog.zwhouse.space/2017/07/13/给自己的忠告/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://blog.zwhouse.space/2017/07/13/给自己的忠告/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际许可</a> 转载请保留原文链接及作者。</p>
 </div>
@@ -456,12 +418,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/git/" rel="tag"><i class="fa fa-tag"></i> git</a>
-          
-        </div>
-      
 
       
       
@@ -471,8 +427,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/06/hexo+github心得/" rel="next" title="hexo+github心得">
-                <i class="fa fa-chevron-left"></i> hexo+github心得
+              <a href="/2017/06/08/github上构建免费的Web应用/" rel="next" title="github上构建免费的Web应用">
+                <i class="fa fa-chevron-left"></i> github上构建免费的Web应用
               </a>
             
           </div>
@@ -480,10 +436,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/06/08/github上构建免费的Web应用/" rel="prev" title="github上构建免费的Web应用">
-                github上构建免费的Web应用 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -612,7 +564,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#暂存一个文件的部分改动"><span class="nav-number">1.</span> <span class="nav-text">暂存一个文件的部分改动</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#逐一添加修改信息"><span class="nav-number">1.1.</span> <span class="nav-text">逐一添加修改信息</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分支"><span class="nav-number">2.</span> <span class="nav-text">分支</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建并切换新分支"><span class="nav-number">2.1.</span> <span class="nav-text">创建并切换新分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#切换分支"><span class="nav-number">2.2.</span> <span class="nav-text">切换分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更新A分支到B分支"><span class="nav-number">2.3.</span> <span class="nav-text">更新A分支到B分支</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#购买商品，尤其是家电或电子产品，我们要了解好关键的技术参数。因为现在有太多的商品华而不实，依靠宣传对其掩饰，当你用过后，就会懊恼。"><span class="nav-number">1.</span> <span class="nav-text">购买商品，尤其是家电或电子产品，我们要了解好关键的技术参数。因为现在有太多的商品华而不实，依靠宣传对其掩饰，当你用过后，就会懊恼。</span></a></li></ol></div>
             
 
           </div>
