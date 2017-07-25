@@ -6,5 +6,5 @@ tags:
 categories:
 
 ---
-[imgage](/images/)
+[image](/images/)
 <!-- more -->

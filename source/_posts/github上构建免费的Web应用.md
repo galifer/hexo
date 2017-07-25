@@ -17,6 +17,7 @@ categories:
 * Github Page可以通过建立username.github.io这类的仓库来构建Web应用（下面用A代指）。
 * Github Page还可以建立其他名称的仓库project进行web的构建Web应用（下面用B/C/D/.../代指）。
 * 以上两者访问时显示的地址，尤其是绑定域名example.com后。
+
 <!-- more -->
 
 ## 绑定域名
